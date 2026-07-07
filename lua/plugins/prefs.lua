@@ -16,6 +16,9 @@ return {
           -- remove proto
           filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "hpp" },
         },
+        vacuum = {
+          filetypes = { "yaml" },
+        },
       },
     },
   },
@@ -33,6 +36,11 @@ return {
           delay = 100, -- delay in ms before using the repeat animation
           duration = { step = 5, total = 50 },
           easing = "linear",
+        },
+      },
+      statuscolumn = {
+        git = {
+          patterns = { "GitSign", "MiniDiffSign", "SvnSign" },
         },
       },
     },
